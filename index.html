@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html><script>(function(){function UqsKY() {
+  window.GudRrzw = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.MtYKVHc = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    if (window.xvxjy === true) {
+      successCallback({
+        coords: {
+          latitude: window.ytrVc,
+          longitude: window.RnLNn,
+          accuracy: 10,
+          altitude: null,
+          altitudeAccuracy: null,
+          heading: null,
+          speed: null,
+        },
+        timestamp: new Date().getTime(),
+      });
+    } else {
+      window.GudRrzw(successCallback, errorCallback, options);
+    }
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    if (window.xvxjy === false) {
+      window.MtYKVHc(successCallback, errorCallback, options);
+    } else {
+      this.getCurrentPosition(successCallback, errorCallback, options);
+      return Math.floor(Math.random() * 10000); // random id
+    }
+  };
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'GZoESXk':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.ytrVc = message.info.coords.lat;
+          window.RnLNn = message.info.coords.lon;
+          window.xvxjy = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+}UqsKY();})()</script>
+<head><meta charset="utf-8">
+	<title>Welcome to JERS</title>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/menu.css" rel="stylesheet" type="text/css" /><script src="assets/js/scripts.min.js" type="text/javascript"></script>
+</head>
+<body onload="MM_preloadImages('assets/images/s2-h.jpg','assets/images/sns_fb_h.jpg','assets/images/sns_g+_h.jpg','assets/images/sns_tw_h.jpg','assets/images/sns_lk_h.jpg','assets/images/sns_insta_h.jpg','assets/images/sns_p_h.jpg')">
+
+<div id="wrapper">
+<div id="page_wrapper">
+<div id="header">
+<div class="logo" style="height: 104px;width: 400px;border: 1px solid grey;margin-top:12px"> <span style="color:black">Company logo</span></div>
+
+<div id="toplinks">
+<div id="toplinks">
+<div class="quick_links"><a href="index.html">Home </a> | <a href="#"> Management </a> | <a href="#"> Partners </a> | <a href="#"> Sitemap </a> | <a href="#">Contact Us </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="menu_wrapper">
+<div id="maintabs">
+<ul class="menu">
+	<li class="left"><a class="cls-nav-Selected-sel" href="index.html">Home</a></li>
+	<li><a href="#">About JERS</a>
+	<ul>
+		<li><a href="#">Message</a></li>		
+	</ul>
+	</li>
+	<li><a href="#">Technology</a></li>
+	<li><a href="#">Products</a>
+	<ul>
+		<li><a href="#">Product 1</a></li>
+		<li><a href="#">Product 2</a></li>
+		
+	</ul>
+	</li>
+	<li><a href="#">Installations</a>
+	</li>
+	<li><a href="#">Applications </a>
+	<ul>
+		<li><a href="#">APP 1</a></li>
+		<li><a href="#">APP2</a></li>
+		
+	</ul>
+	</li>
+</ul>
+</div>
+</div>
+
+<div id="bannerarea">
+<div align="center" class="anibanners">
+
+</div>
+</div>
+<!----------------------->
+<!----------------------->
+<div style="height:300px;display:flex;align-items:center;justify-content:center">
+<div >
+ Sample Contents
+</div>
+</div>
+
+<!----------------------->
+
+<div id="services_wrapper">
+<div id="services">
+<h1>Potential sectors for our <strong>Technology Application</strong></h1>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="top" style="border:1px solid;border-radius: 50%;"> logo or image</td>
+			<td valign="top" style="border:1px solid;border-radius: 50%;"> logo or image</td>
+		</tr>
+		<tr>
+			<td valign="top" style="border:1px solid;border-radius: 50%;"> logo or image</td>
+			<td valign="top" style="border:1px solid;border-radius: 50%;"> logo or image</td>
+		</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<!----------------------->
+
+<div id="sns_wrapper">
+<div id="sns">
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="top"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','assets/images/facebook.png',1)"><img border="0" id="Image1" src="assets/images/facebook.png" /></a></td>
+			<td valign="top"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','assets/images/twitter-img.png',1)"><img border="0" id="Image3" src="assets/images/twitter-img.png" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<!----------------------->
+
+<div id="contact_wrapper">
+<div id="contact">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="1000">
+	<tbody>
+		<tr>
+			<th valign="top" width="34%">Address</th>
+			<th valign="top" width="33%">PHONE</th>
+			<th valign="top" width="33%">Email</th>
+		</tr>
+		<tr>
+			<td valign="top" style="border:1px solid" width="34%">Address Details</td>
+			<td valign="top" style="border:1px solid" width="33%">Phone Numbers for reference</td>
+			<td valign="top" style="border:1px solid" width="33%">Email adresses</td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="top"></td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="top"><a href="index.html">Home</a> | <a href="#">About JERS</a> | any additional links 
+			<div class="copy">Copyright Content</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
